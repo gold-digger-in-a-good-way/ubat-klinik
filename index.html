@@ -1,12 +1,14 @@
-html
 <!DOCTYPE html>
 <html lang="ms">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistem Ubat Klinik</title>
+  <title>Sistem Pengambilan Ubat Klinik</title>
 
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,12 +20,19 @@ html
 
 <main>
 
-  <div class="card">
+  <section class="card">
+    <h2>Maklumat Pesakit</h2>
+    <input type="text" placeholder="Nama Pesakit">
+    <input type="text" placeholder="No Kad Pengenalan">
+    <input type="text" placeholder="No Telefon">
+  </section>
+
+  <section class="card">
     <h2>Maklumat Ubat</h2>
     <input type="text" id="namaUbat" placeholder="Nama Ubat">
     <input type="time" id="masaUbat">
-    <button onclick="setReminder()">Set Reminder</button>
-  </div>
+    <button onclick="setReminder()">Set Reminder Ubat</button>
+  </section>
 
 </main>
 
